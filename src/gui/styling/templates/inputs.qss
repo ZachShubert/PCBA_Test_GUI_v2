@@ -1,0 +1,322 @@
+/* ============================================
+   INPUTS - Text fields, combo boxes, spinners
+   ============================================ */
+
+/* Line Edit */
+QLineEdit {
+    background-color: {background_primary};
+    color: {text_primary};
+    border: 1px solid {border};
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+QLineEdit:hover {
+    border-color: {text_tertiary};
+}
+
+QLineEdit:focus {
+    border-color: {border_focus};
+    border-width: 2px;
+    padding: 7px 11px;
+}
+
+QLineEdit:disabled {
+    background-color: {background_secondary};
+    color: {text_tertiary};
+    border-color: {border};
+}
+
+QLineEdit[class="input-search"] {
+    padding-left: 36px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSI3IiBjeT0iNyIgcj0iNSIgc3Ryb2tlPSIjOTRhM2I4IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxwYXRoIGQ9Ik0xMC41IDEwLjVMMTQgMTQiIHN0cm9rZT0iIzk0YTNiOCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-position: 12px center;
+}
+
+QLineEdit[class="input-error"] {
+    border-color: {error};
+}
+
+QLineEdit[class="input-success"] {
+    border-color: {success};
+}
+
+/* Text Edit */
+QTextEdit {
+    background-color: {background_primary};
+    color: {text_primary};
+    border: 1px solid {border};
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+QTextEdit:hover {
+    border-color: {text_tertiary};
+}
+
+QTextEdit:focus {
+    border-color: {border_focus};
+    border-width: 2px;
+    padding: 7px 11px;
+}
+
+QTextEdit:disabled {
+    background-color: {background_secondary};
+    color: {text_tertiary};
+    border-color: {border};
+}
+
+/* Plain Text Edit */
+QPlainTextEdit {
+    background-color: {background_primary};
+    color: {text_primary};
+    border: 1px solid {border};
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+QPlainTextEdit:hover {
+    border-color: {text_tertiary};
+}
+
+QPlainTextEdit:focus {
+    border-color: {border_focus};
+    border-width: 2px;
+    padding: 7px 11px;
+}
+
+QPlainTextEdit:disabled {
+    background-color: {background_secondary};
+    color: {text_tertiary};
+    border-color: {border};
+}
+
+/* Combo Box */
+QComboBox {
+    background-color: {background_primary};
+    color: {text_primary};
+    border: 1px solid {border};
+    border-radius: 6px;
+    padding: 8px 8px;
+    font-size: 13px;
+    min-height: 20px;
+}
+
+QComboBox:hover {
+    border-color: {text_tertiary};
+}
+
+QComboBox:focus {
+    border-color: {border_focus};
+    border-width: 2px;
+    padding: 8px 8px;
+}
+
+QComboBox:disabled {
+    background-color: {background_secondary};
+    color: {text_tertiary};
+    border-color: {border};
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 30px;
+}
+
+QComboBox::down-arrow {
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMyA1TDYgOEw5IDUiIHN0cm9rZT0iIzY0NzQ4YiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=);
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: {background_primary};
+    border: 1px solid {border};
+    border-radius: 6px;
+    padding: 4px;
+    selection-background-color: {background_hover};
+    selection-color: {text_primary};
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item {
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: {background_hover};
+}
+
+/* Spin Box */
+QSpinBox, QDoubleSpinBox {
+    background-color: {background_primary};
+    color: {text_primary};
+    border: 1px solid {border};
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+QSpinBox:hover, QDoubleSpinBox:hover {
+    border-color: {text_tertiary};
+}
+
+QSpinBox:focus, QDoubleSpinBox:focus {
+    border-color: {border_focus};
+    border-width: 2px;
+    padding: 7px 11px;
+}
+
+QSpinBox:disabled, QDoubleSpinBox:disabled {
+    background-color: {background_secondary};
+    color: {text_tertiary};
+    border-color: {border};
+}
+
+QSpinBox::up-button, QDoubleSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid {border};
+    border-top-right-radius: 6px;
+    background-color: {background_secondary};
+}
+
+QSpinBox::up-button:hover, QDoubleSpinBox::up-button:hover {
+    background-color: {background_hover};
+}
+
+QSpinBox::down-button, QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 20px;
+    border-left: 1px solid {border};
+    border-bottom-right-radius: 6px;
+    background-color: {background_secondary};
+}
+
+QSpinBox::down-button:hover, QDoubleSpinBox::down-button:hover {
+    background-color: {background_hover};
+}
+
+QSpinBox::up-arrow, QDoubleSpinBox::up-arrow {
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMiA3TDUgNEw4IDciIHN0cm9rZT0iIzY0NzQ4YiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=);
+    width: 10px;
+    height: 10px;
+}
+
+QSpinBox::down-arrow, QDoubleSpinBox::down-arrow {
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMiAzTDUgNkw4IDMiIHN0cm9rZT0iIzY0NzQ4YiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=);
+    width: 10px;
+    height: 10px;
+}
+
+/* Date/Time Edit */
+QDateEdit, QTimeEdit, QDateTimeEdit {
+    background-color: {background_primary};
+    color: {text_primary};
+    border: 1px solid {border};
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+QDateEdit:hover, QTimeEdit:hover, QDateTimeEdit:hover {
+    border-color: {text_tertiary};
+}
+
+QDateEdit:focus, QTimeEdit:focus, QDateTimeEdit:focus {
+    border-color: {border_focus};
+    border-width: 2px;
+    padding: 7px 11px;
+}
+
+QDateEdit::drop-down, QTimeEdit::drop-down, QDateTimeEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid {border};
+}
+
+/* Calendar Widget */
+QCalendarWidget {
+    background-color: {background_primary};
+}
+
+QCalendarWidget QToolButton {
+    color: {text_primary};
+    background-color: {background_secondary};
+    border: 1px solid {border};
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: {background_hover};
+}
+
+QCalendarWidget QMenu {
+    background-color: {background_primary};
+    border: 1px solid {border};
+}
+
+QCalendarWidget QSpinBox {
+    background-color: {background_secondary};
+}
+
+QCalendarWidget QAbstractItemView {
+    background-color: {background_primary};
+    selection-background-color: {primary};
+    selection-color: {background_primary};
+}
+
+/* Slider */
+QSlider::groove:horizontal {
+    border: 1px solid {border};
+    height: 6px;
+    background-color: {background_tertiary};
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background-color: {primary};
+    border: 2px solid {background_primary};
+    width: 16px;
+    height: 16px;
+    margin: -6px 0;
+    border-radius: 8px;
+}
+
+QSlider::handle:horizontal:hover {
+    background-color: {secondary};
+}
+
+QSlider::groove:vertical {
+    border: 1px solid {border};
+    width: 6px;
+    background-color: {background_tertiary};
+    border-radius: 3px;
+}
+
+QSlider::handle:vertical {
+    background-color: {primary};
+    border: 2px solid {background_primary};
+    width: 16px;
+    height: 16px;
+    margin: 0 -6px;
+    border-radius: 8px;
+}
+
+QSlider::handle:vertical:hover {
+    background-color: {secondary};
+}
+
+/* Dial */
+QDial {
+    background-color: {background_secondary};
+}

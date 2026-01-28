@@ -1,0 +1,178 @@
+/* ============================================
+   TABLES & LISTS - Data display widgets
+   ============================================ */
+
+/* Table Widget */
+QTableWidget, QTableView {
+    background-color: {background_primary};
+    alternate-background-color: {background_secondary};
+    color: {text_primary};
+    gridline-color: {border};
+    border: 1px solid {border};
+    border-radius: 8px;
+    selection-background-color: {primary};
+    selection-color: {background_primary};
+}
+
+QTableWidget::item, QTableView::item {
+    padding: 8px;
+    border: none;
+}
+
+QTableWidget::item:hover, QTableView::item:hover {
+    background-color: {background_hover};
+}
+
+QTableWidget::item:selected, QTableView::item:selected {
+    background-color: {primary};
+    color: {background_primary};
+}
+
+/* Table Header */
+QHeaderView::section {
+    background-color: {background_secondary};
+    color: {text_primary};
+    padding: 8px 12px;
+    border: none;
+    border-right: 1px solid {border};
+    border-bottom: 1px solid {border};
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+QHeaderView::section:hover {
+    background-color: {background_hover};
+}
+
+QHeaderView::section:first {
+    border-top-left-radius: 8px;
+}
+
+QHeaderView::section:last {
+    border-top-right-radius: 8px;
+    border-right: none;
+}
+
+/* Table Corner Button */
+QTableCornerButton::section {
+    background-color: {background_secondary};
+    border: none;
+    border-right: 1px solid {border};
+    border-bottom: 1px solid {border};
+    border-top-left-radius: 8px;
+}
+
+/* List Widget */
+QListWidget, QListView {
+    background-color: {background_primary};
+    color: {text_primary};
+    border: 1px solid {border};
+    border-radius: 8px;
+    padding: 4px;
+    outline: none;
+}
+
+QListWidget::item, QListView::item {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+QListWidget::item:hover, QListView::item:hover {
+    background-color: {background_hover};
+}
+
+QListWidget::item:selected, QListView::item:selected {
+    background-color: {primary};
+    color: {background_primary};
+}
+
+QListWidget::item:selected:!active, QListView::item:selected:!active {
+    background-color: {background_tertiary};
+    color: {text_primary};
+}
+
+/* Tree Widget */
+QTreeWidget, QTreeView {
+    background-color: {background_primary};
+    alternate-background-color: {background_secondary};
+    color: {text_primary};
+    border: 1px solid {border};
+    border-radius: 8px;
+    padding: 4px;
+    outline: none;
+}
+
+QTreeWidget::item, QTreeView::item {
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+QTreeWidget::item:hover, QTreeView::item:hover {
+    background-color: {background_hover};
+}
+
+QTreeWidget::item:selected, QTreeView::item:selected {
+    background-color: {primary};
+    color: {background_primary};
+}
+
+QTreeWidget::item:selected:!active, QTreeView::item:selected:!active {
+    background-color: {background_tertiary};
+    color: {text_primary};
+}
+
+QTreeWidget::branch:has-children:!has-siblings:closed,
+QTreeWidget::branch:closed:has-children:has-siblings,
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNNCAzTDggNkw0IDkiIHN0cm9rZT0iIzY0NzQ4YiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=);
+}
+
+QTreeWidget::branch:open:has-children:!has-siblings,
+QTreeWidget::branch:open:has-children:has-siblings,
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings {
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMyA0TDYgOEw5IDQiIHN0cm9rZT0iIzY0NzQ4YiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=);
+}
+
+/* Column View */
+QColumnView {
+    background-color: {background_primary};
+    color: {text_primary};
+    border: 1px solid {border};
+    border-radius: 8px;
+}
+
+QColumnView::item:hover {
+    background-color: {background_hover};
+}
+
+QColumnView::item:selected {
+    background-color: {primary};
+    color: {background_primary};
+}
+
+/* Table Styling Variants */
+QTableWidget[class="table-striped"] {
+    alternate-background-color: {background_secondary};
+}
+
+QTableWidget[class="table-hover"]::item:hover {
+    background-color: {background_hover};
+}
+
+QTableWidget[class="table-compact"]::item {
+    padding: 4px 8px;
+}
+
+/* List Styling Variants */
+QListWidget[class="list-compact"]::item {
+    padding: 6px 10px;
+}
+
+QListWidget[class="list-bordered"]::item {
+    border: 1px solid {border};
+    margin: 2px 0;
+}

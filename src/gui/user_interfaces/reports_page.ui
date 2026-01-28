@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReportsPage</class>
+ <widget class="QWidget" name="ReportsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <layout class="QHBoxLayout" name="mainLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <!-- SIDEBAR -->
+    <widget class="QFrame" name="sidebar_frame">
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string>QFrame#sidebar_frame { background-color: #1e293b; border-right: 1px solid #334155; }</string>
+     </property>
+     <layout class="QVBoxLayout" name="sidebarLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QScrollArea" name="sidebar_scroll">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="sidebar_content">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>300</width>
+           <height>780</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="sidebarContentLayout">
+          <property name="spacing">
+           <number>12</number>
+          </property>
+          <property name="leftMargin">
+           <number>15</number>
+          </property>
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <property name="rightMargin">
+           <number>15</number>
+          </property>
+          <property name="bottomMargin">
+           <number>15</number>
+          </property>
+          
+          <!-- Spec Selection Section -->
+          <item>
+           <widget class="QLabel" name="spec_selection_label">
+            <property name="text">
+             <string>Spec Selection</string>
+            </property>
+            <property name="styleSheet">
+             <string>font-size: 14px; font-weight: bold; color: #f8fafc;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="spec_search">
+            <property name="placeholderText">
+             <string>Search specs...</string>
+            </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="spec_list">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::MultiSelection</enum>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="specButtonsLayout">
+            <item>
+             <widget class="QPushButton" name="select_all_specs_btn">
+              <property name="text">
+               <string>Select All</string>
+              </property>
+              <property name="styleSheet">
+               <string>padding: 4px 8px;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="clear_specs_btn">
+              <property name="text">
+               <string>Clear</string>
+              </property>
+              <property name="styleSheet">
+               <string>padding: 4px 8px;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          
+          <!-- Divider -->
+          <item>
+           <widget class="QFrame" name="divider1">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>2</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>2</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string>background-color: #334155;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::HLine</enum>
+            </property>
+           </widget>
+          </item>
+          
+          <!-- Filters Section -->
+          <item>
+           <widget class="QLabel" name="filters_label">
+            <property name="text">
+             <string>Filters</string>
+            </property>
+            <property name="styleSheet">
+             <string>font-size: 14px; font-weight: bold; color: #f8fafc;</string>
+            </property>
+           </widget>
+          </item>
+          
+          <!-- Group By -->
+          <item>
+           <widget class="QLabel" name="group_by_label">
+            <property name="text">
+             <string>Group By</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="group_by_combo">
+            <item>
+             <property name="text">
+              <string>None</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>PIA Part Number</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>PIA Serial Number</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>PMT Batch Number</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>PMT Serial Number</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Test Name</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Test Fixture</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          
+          <!-- PIA Part Number Filter -->
+          <item>
+           <widget class="QLabel" name="pia_part_label">
+            <property name="text">
+             <string>PIA Part Number</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="pia_part_filter"/>
+          </item>
+          
+          <!-- PIA Serial Number Filter -->
+          <item>
+           <widget class="QLabel" name="pia_serial_label">
+            <property name="text">
+             <string>PIA Serial Number</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="pia_serial_filter">
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <property name="insertPolicy">
+             <enum>QComboBox::NoInsert</enum>
+            </property>
+           </widget>
+          </item>
+          
+          <!-- PMT Batch Number Filter -->
+          <item>
+           <widget class="QLabel" name="pmt_batch_label">
+            <property name="text">
+             <string>PMT Batch Number</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="pmt_batch_filter"/>
+          </item>
+          
+          <!-- PMT Serial Number Filter -->
+          <item>
+           <widget class="QLabel" name="pmt_serial_label">
+            <property name="text">
+             <string>PMT Serial Number</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="pmt_serial_filter">
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <property name="insertPolicy">
+             <enum>QComboBox::NoInsert</enum>
+            </property>
+           </widget>
+          </item>
+          
+          <!-- Test Fixture Filter -->
+          <item>
+           <widget class="QLabel" name="fixture_label">
+            <property name="text">
+             <string>Test Fixture</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="fixture_filter"/>
+          </item>
+          
+          <!-- Date Range -->
+          <item>
+           <widget class="QLabel" name="date_range_label">
+            <property name="text">
+             <string>Date Range</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="dateRangeLayout">
+            <item>
+             <widget class="QDateEdit" name="date_from">
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+              <property name="displayFormat">
+               <string>yyyy-MM-dd</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="date_to_label">
+              <property name="text">
+               <string>to</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDateEdit" name="date_to">
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+              <property name="displayFormat">
+               <string>yyyy-MM-dd</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          
+          <!-- Max Tests per Device -->
+          <item>
+           <layout class="QHBoxLayout" name="maxTestsLayout">
+            <item>
+             <widget class="QLabel" name="max_tests_label">
+              <property name="text">
+               <string>Max Tests/Device</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="max_tests_spin">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>10</number>
+              </property>
+              <property name="value">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          
+          <!-- Divider -->
+          <item>
+           <widget class="QFrame" name="divider2">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>2</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>2</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string>background-color: #334155;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::HLine</enum>
+            </property>
+           </widget>
+          </item>
+          
+          <!-- Generate Report Button -->
+          <item>
+           <widget class="QPushButton" name="generate_btn">
+            <property name="text">
+             <string>📊 Generate Report</string>
+            </property>
+            <property name="styleSheet">
+             <string>background-color: #3b82f6; color: white; padding: 10px 16px; border-radius: 6px; font-weight: bold;</string>
+            </property>
+           </widget>
+          </item>
+          
+          <!-- Spacer -->
+          <item>
+           <spacer name="sidebarSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   
+   <!-- MAIN CONTENT -->
+   <item>
+    <widget class="QFrame" name="content_frame">
+     <layout class="QVBoxLayout" name="contentLayout">
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>15</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>15</number>
+      </property>
+      
+      <!-- Header -->
+      <item>
+       <layout class="QHBoxLayout" name="headerLayout">
+        <item>
+         <layout class="QVBoxLayout" name="titleLayout">
+          <property name="spacing">
+           <number>2</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="page_title">
+            <property name="text">
+             <string>Reports &amp; Export</string>
+            </property>
+            <property name="styleSheet">
+             <string>font-size: 24px; font-weight: bold; color: #f8fafc;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="page_subtitle">
+            <property name="text">
+             <string>Select specs and filters to generate a report</string>
+            </property>
+            <property name="styleSheet">
+             <string>color: #94a3b8;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="headerSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="export_btn">
+          <property name="text">
+           <string>📥 Export to Excel</string>
+          </property>
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string>background-color: #3b82f6; color: white; padding: 8px 16px; border-radius: 6px;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="export_settings_btn">
+          <property name="text">
+           <string>⚙️</string>
+          </property>
+          <property name="toolTip">
+           <string>Export Settings</string>
+          </property>
+          <property name="styleSheet">
+           <string>padding: 8px 12px; border-radius: 6px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      
+      <!-- Table Controls -->
+      <item>
+       <layout class="QHBoxLayout" name="tableControlsLayout">
+        <item>
+         <widget class="QPushButton" name="delete_rows_btn">
+          <property name="text">
+           <string>🗑️ Delete Selected Rows</string>
+          </property>
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string>background-color: #ef4444; color: white; padding: 6px 12px; border-radius: 4px;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="delete_cols_btn">
+          <property name="text">
+           <string>🗑️ Delete Selected Columns</string>
+          </property>
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string>background-color: #ef4444; color: white; padding: 6px 12px; border-radius: 4px;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="tableControlsSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="preview_style_btn">
+          <property name="text">
+           <string>👁️ Preview Style</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string>background-color: #0ea5e9; color: white; padding: 6px 12px; border-radius: 4px;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="reset_table_btn">
+          <property name="text">
+           <string>↻ Reset Table</string>
+          </property>
+          <property name="styleSheet">
+           <string>background-color: #475569; color: white; padding: 6px 12px; border-radius: 4px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      
+      <!-- Main Data Table -->
+      <item>
+       <widget class="QTableWidget" name="data_table">
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::ExtendedSelection</enum>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::CustomContextMenu</enum>
+        </property>
+       </widget>
+      </item>
+      
+      <!-- Export Configuration Panel -->
+      <item>
+       <widget class="QFrame" name="export_panel">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>220</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>280</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>QFrame#export_panel { background-color: #1e293b; border: 1px solid #334155; border-radius: 8px; }</string>
+        </property>
+        <layout class="QVBoxLayout" name="exportPanelLayout">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>15</number>
+         </property>
+         <property name="rightMargin">
+          <number>15</number>
+         </property>
+         <property name="bottomMargin">
+          <number>15</number>
+         </property>
+         
+         <!-- Panel Header -->
+         <item>
+          <layout class="QHBoxLayout" name="exportHeaderLayout">
+           <item>
+            <widget class="QLabel" name="export_panel_title">
+             <property name="text">
+              <string>📋 Export Configuration</string>
+             </property>
+             <property name="styleSheet">
+              <string>font-size: 14px; font-weight: bold; color: #f8fafc;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="exportHeaderSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="toggle_export_panel_btn">
+             <property name="text">
+              <string>▼</string>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         
+         <!-- Export Options Tab Widget -->
+         <item>
+          <widget class="QTabWidget" name="export_tabs">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>180</height>
+            </size>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           
+           <!-- Layout Tab -->
+           <widget class="QWidget" name="layout_tab">
+            <attribute name="title">
+             <string>Layout</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="layoutTabLayout">
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QCheckBox" name="transpose_checkbox">
+               <property name="text">
+                <string>Transpose Data (Rows ↔ Columns)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="includeOptionsLayout">
+               <item>
+                <widget class="QCheckBox" name="include_limits_checkbox">
+                 <property name="text">
+                  <string>Include Limits</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="include_units_checkbox">
+                 <property name="text">
+                  <string>Include Units</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="include_timestamps_checkbox">
+                 <property name="text">
+                  <string>Include Timestamps</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="plotOptionsLayout">
+               <item>
+                <widget class="QCheckBox" name="include_plots_checkbox">
+                 <property name="text">
+                  <string>Include Plot Images</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="group_headers_checkbox">
+                 <property name="text">
+                  <string>Group Headers</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="layoutTabSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+           
+           <!-- Colors Tab -->
+           <widget class="QWidget" name="colors_tab">
+            <attribute name="title">
+             <string>Colors</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="colorsTabLayout">
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <!-- Color pickers will be added dynamically -->
+             <item>
+              <widget class="QLabel" name="colors_info_label">
+               <property name="text">
+                <string>Color pickers for header, data, zebra, and borders</string>
+               </property>
+               <property name="styleSheet">
+                <string>color: #94a3b8;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="zebra_checkbox">
+               <property name="text">
+                <string>Enable Zebra Striping</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="colorsTabSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+           
+           <!-- Conditional Tab -->
+           <widget class="QWidget" name="conditional_tab">
+            <attribute name="title">
+             <string>Conditional</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="conditionalTabLayout">
+             <property name="leftMargin">
+              <number>10</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QCheckBox" name="cond_format_checkbox">
+               <property name="text">
+                <string>Enable Pass/Fail Conditional Formatting</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="cond_format_desc">
+               <property name="text">
+                <string>Values within limits will be highlighted green,
+values outside limits will be highlighted red.</string>
+               </property>
+               <property name="styleSheet">
+                <string>color: #64748b; font-size: 11px;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="conditionalTabSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

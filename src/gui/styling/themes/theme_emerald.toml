@@ -1,0 +1,56 @@
+# Emerald Theme - Green Palette
+# Professional, industrial, PCBA manufacturing aesthetic
+# Primary color matches HTML design: #00C853
+
+[light]
+# Primary accent colors
+primary = "#00C853"           # Emerald green
+secondary = "#00E676"         # Light green
+
+# Backgrounds (lightest to darkest)
+background_primary = "#ffffff"     # Pure white
+background_secondary = "#f8fafc"   # Slate 50
+background_tertiary = "#f1f5f9"    # Slate 100
+background_hover = "#e2e8f0"       # Slate 200
+
+# Text colors (darkest to lightest)
+text_primary = "#0f172a"      # Slate 900
+text_secondary = "#475569"    # Slate 600
+text_tertiary = "#94a3b8"     # Slate 400
+
+# Borders and dividers
+border = "#e2e8f0"            # Slate 200
+border_focus = "#00C853"      # Primary green
+
+# Status colors
+success = "#00C853"           # Green (same as primary)
+warning = "#FFD740"           # Amber
+error = "#FF5252"             # Red
+info = "#137fec"              # Blue
+
+[dark]
+# Primary accent colors
+primary = "#00C853"           # Emerald green
+secondary = "#00E676"         # Light green
+
+# Backgrounds (darkest to lighter)
+background_primary = "#101922"     # Dark blue-gray (matching HTML)
+background_secondary = "#111a22"   # Slightly lighter
+background_tertiary = "#233648"    # Border/surface color
+background_hover = "#324d67"       # Hover state
+
+# Text colors (lightest to darker)
+text_primary = "#FFFFFF"      # Pure white
+text_secondary = "#cbd5e1"    # Light gray
+text_tertiary = "#94a3b8"     # Muted gray
+text_muted = "#64748b"        # Very muted
+
+# Borders and dividers
+border = "#233648"            # Dark border
+border_focus = "#00C853"      # Primary green
+
+# Status colors
+success = "#00C853"           # Green
+warning = "#FFD740"           # Amber
+error = "#FF5252"             # Red
+info = "#137fec"              # Blue

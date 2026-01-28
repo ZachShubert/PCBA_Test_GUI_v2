@@ -1,0 +1,30 @@
+# PCBA Database Application Requirements
+# Python 3.10+
+
+# Core GUI Framework
+PyQt6>=6.4.0
+PyQt6-WebEngine>=6.4.0
+
+# Database
+SQLAlchemy>=2.0.0
+
+# Data Processing & Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Plotting
+pyqtgraph>=0.13.0
+matplotlib>=3.7.0
+
+# Excel Export
+openpyxl>=3.1.0
+
+# Configuration
+tomli>=2.0.0  # For Python < 3.11 (built-in tomllib in 3.11+)
+
+# Optional: For development/testing
+pytest>=7.0.0
+pytest-qt>=4.2.0
+
+# Optional: For plot image generation in reports
+Pillow>=9.0.0

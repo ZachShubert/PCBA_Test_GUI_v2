@@ -1,0 +1,3846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WidgetCatalog</class>
+ <widget class="QMainWindow" name="WidgetCatalog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>885</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget Catalog - QSS Style Reference</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Generated from theme: ocean (dark mode) */
+/* DO NOT EDIT - This file is auto-generated */
+
+/* ============================================
+   BASE STYLES - Global application styling
+   ============================================ */
+
+/* Main Window */
+QMainWindow {
+    background-color: #0f172a;
+}
+
+/* Central Widget */
+QWidget {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: Inter,  &quot;sans-serif&quot;, &quot;JetBrains Mono&quot;, monospace, &quot;Segoe UI&quot;, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Scroll Areas */
+QScrollArea {
+    border: none;
+    background-color: #0f172a;
+}
+
+/* Scroll Bars */
+QScrollBar:vertical {
+    border: none;
+    background-color: #1e293b;
+    width: 10px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #334155;
+    min-height: 30px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #3b82f6;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    background: transparent;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background-color: #1e293b;
+    height: 10px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #334155;
+    min-width: 30px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #3b82f6;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+    background: transparent;
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: transparent;
+}
+
+/* Frames and Containers */
+QFrame {
+    border: none;
+    background-color: transparent;
+}
+
+QFrame[class=&quot;container-primary&quot;] {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+QFrame[class=&quot;container-secondary&quot;] {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+QFrame[class=&quot;container-tertiary&quot;] {
+    background-color: #334155;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+QFrame[class=&quot;header-frame&quot;] {
+    background-color: #334155;
+    border-bottom: 1px solid #334155;
+    border-radius: 0px;
+}
+
+QFrame[class=&quot;divider-vertical&quot;] {
+    background-color: #334155;
+    max-width: 1px;
+    min-width: 1px;
+}
+
+QFrame[class=&quot;divider-horizontal&quot;] {
+    background-color: #334155;
+    max-height: 1px;
+    min-height: 1px;
+}
+
+/* Group Box */
+QGroupBox {
+    border: 1px solid #334155;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    background-color: #1e293b;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0px 8px;
+    color: #f8fafc;
+    font-weight: bold;
+}
+
+/* Splitter */
+QSplitter::handle {
+    background-color: #334155;
+}
+
+QSplitter::handle:horizontal {
+    width: 2px;
+}
+
+QSplitter::handle:vertical {
+    height: 2px;
+}
+
+QSplitter::handle:hover {
+    background-color: #3b82f6;
+}
+
+/* Tool Tip */
+QToolTip {
+    background-color: #334155;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+/* Menu Bar */
+QMenuBar {
+    background-color: #0f172a;
+    border-bottom: 1px solid #334155;
+    padding: 4px;
+}
+
+QMenuBar::item {
+    padding: 6px 12px;
+    background-color: transparent;
+    color: #f8fafc;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected {
+    background-color: #475569;
+}
+
+QMenuBar::item:pressed {
+    background-color: #3b82f6;
+    color: #0f172a;
+}
+
+/* Menu */
+QMenu {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+QMenu::item {
+    padding: 8px 24px 8px 12px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #475569;
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #334155;
+    margin: 6px 0px;
+}
+
+/* Status Bar */
+QStatusBar {
+    background-color: #0f172a;
+    border-top: 1px solid #334155;
+    color: #cbd5e1;
+}
+
+QStatusBar::item {
+    border: none;
+}
+
+/* Tab Widget */
+QTabWidget::pane {
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background-color: #0f172a;
+    top: -1px;
+}
+
+QTabBar::tab {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    padding: 10px 20px;
+    border: 1px solid #334155;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-weight: bold;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #475569;
+}
+
+/* Progress Bar */
+QProgressBar {
+    border: 1px solid #334155;
+    border-radius: 4px;
+    background-color: #334155;
+    text-align: center;
+    color: #f8fafc;
+    height: 20px;
+}
+
+QProgressBar::chunk {
+    background-color: #3b82f6;
+    border-radius: 3px;
+}
+
+QProgressBar[class=&quot;progress-success&quot;]::chunk {
+    background-color: #22c55e;
+}
+
+QProgressBar[class=&quot;progress-warning&quot;]::chunk {
+    background-color: #f59e0b;
+}
+
+QProgressBar[class=&quot;progress-error&quot;]::chunk {
+    background-color: #ef4444;
+}
+
+
+/* ============================================
+   BUTTONS - All button variants and states
+   ============================================ */
+
+/* Base Button Styling */
+QPushButton {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 1px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #475569;
+    border-color: #64748b;
+	padding: 1px;
+}
+
+QPushButton:pressed {
+    background-color: #334155;
+	padding: 1px;
+}
+
+QPushButton:disabled {
+    background-color: #1e293b;
+    color: #64748b;
+    border-color: #334155;
+	padding: 1px;
+}
+
+/* Primary Button */
+QPushButton[class=&quot;btn-primary&quot;] {
+    background-color: #3b82f6;
+    color: #0f172a;
+    border: none;
+    font-weight: bold;
+padding: 1px;
+}
+
+QPushButton[class=&quot;btn-primary&quot;]:hover {
+    background-color: #06b6d4;
+padding: 1px;
+}
+
+QPushButton[class=&quot;btn-primary&quot;]:pressed {
+    background-color: #3b82f6;
+    padding: 9px 15px 7px 17px;
+padding: 1px;
+}
+
+QPushButton[class=&quot;btn-primary&quot;]:disabled {
+    background-color: #64748b;
+    color: #1e293b;
+padding: 1px;
+}
+
+/* Secondary Button */
+QPushButton[class=&quot;btn-secondary&quot;] {
+    background-color: #06b6d4;
+    color: #0f172a;
+    border: none;
+    font-weight: bold;
+}
+
+QPushButton[class=&quot;btn-secondary&quot;]:hover {
+    background-color: #3b82f6;
+}
+
+QPushButton[class=&quot;btn-secondary&quot;]:pressed {
+    background-color: #06b6d4;
+    padding: 9px 15px 7px 17px;
+}
+
+/* Outline Button */
+QPushButton[class=&quot;btn-outline&quot;] {
+    background-color: transparent;
+    color: #3b82f6;
+    border: 2px solid #3b82f6;
+}
+
+QPushButton[class=&quot;btn-outline&quot;]:hover {
+    background-color: #3b82f6;
+    color: #0f172a;
+}
+
+QPushButton[class=&quot;btn-outline&quot;]:pressed {
+    background-color: #06b6d4;
+    border-color: #06b6d4;
+}
+
+/* Ghost Button */
+QPushButton[class=&quot;btn-ghost&quot;] {
+    background-color: transparent;
+    color: #f8fafc;
+    border: none;
+}
+
+QPushButton[class=&quot;btn-ghost&quot;]:hover {
+    background-color: #475569;
+}
+
+QPushButton[class=&quot;btn-ghost&quot;]:pressed {
+    background-color: #334155;
+}
+
+QPushButton[class=&quot;btn-ghost&quot;]:checked {
+    background-color: rgba(0, 200, 83, 0.15);
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+/* Navigation Tab Buttons */
+QPushButton[class=&quot;nav-tab&quot;] {
+    background-color: transparent;
+    color: #64748b;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+QPushButton[class=&quot;nav-tab&quot;]:hover {
+    color: #3b82f6;
+    background-color: rgba(0, 200, 83, 0.05);
+}
+
+QPushButton[class=&quot;nav-tab-active&quot;] {
+    background-color: transparent;
+    color: #3b82f6;
+    border: none;
+    border-bottom: 3px solid #3b82f6;
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Window Control Buttons (Min/Max/Close) */
+QPushButton[class=&quot;win-minimize-button&quot;] {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+QPushButton[class=&quot;win-minimize-button&quot;]:hover {
+    background-color: #233648;
+    color: #FFFFFF;
+}
+
+QPushButton[class=&quot;win-maximize-button&quot;] {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+QPushButton[class=&quot;win-maximize-button&quot;]:hover {
+    background-color: #233648;
+    color: #FFFFFF;
+}
+
+QPushButton[class=&quot;win-close-button&quot;] {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+QPushButton[class=&quot;win-close-button&quot;]:hover {
+    background-color: #dc2626;
+    color: #FFFFFF;
+}
+
+/* Success Button */
+QPushButton[class=&quot;btn-success&quot;] {
+    background-color: #22c55e;
+    color: #0f172a;
+    border: none;
+    font-weight: bold;
+}
+
+QPushButton[class=&quot;btn-success&quot;]:hover {
+    background-color: #16a34a;
+}
+
+QPushButton[class=&quot;btn-success&quot;]:pressed {
+    background-color: #22c55e;
+    padding: 9px 15px 7px 17px;
+}
+
+/* Warning Button */
+QPushButton[class=&quot;btn-warning&quot;] {
+    background-color: #f59e0b;
+    color: #0f172a;
+    border: none;
+    font-weight: bold;
+}
+
+QPushButton[class=&quot;btn-warning&quot;]:hover {
+    background-color: #d97706;
+}
+
+QPushButton[class=&quot;btn-warning&quot;]:pressed {
+    background-color: #f59e0b;
+    padding: 9px 15px 7px 17px;
+}
+
+/* Danger/Error Button */
+QPushButton[class=&quot;btn-danger&quot;] {
+    background-color: #ef4444;
+    color: #0f172a;
+    border: none;
+    font-weight: bold;
+}
+
+QPushButton[class=&quot;btn-danger&quot;]:hover {
+    background-color: #dc2626;
+}
+
+QPushButton[class=&quot;btn-danger&quot;]:pressed {
+    background-color: #ef4444;
+    padding: 9px 15px 7px 17px;
+}
+
+/* Info Button */
+QPushButton[class=&quot;btn-info&quot;] {
+    background-color: #06b6d4;
+    color: #0f172a;
+    border: none;
+    font-weight: bold;
+}
+
+QPushButton[class=&quot;btn-info&quot;]:hover {
+    background-color: #0891b2;
+}
+
+QPushButton[class=&quot;btn-info&quot;]:pressed {
+    background-color: #06b6d4;
+    padding: 9px 15px 7px 17px;
+}
+
+/* Small Button */
+QPushButton[class=&quot;btn-sm&quot;] {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+/* Large Button */
+QPushButton[class=&quot;btn-lg&quot;] {
+    padding: 12px 24px;
+    font-size: 15px;
+}
+
+/* Icon Button (square) */
+QPushButton[class=&quot;btn-icon&quot;] {
+    padding: 8px;
+    min-width: 36px;
+    max-width: 36px;
+    min-height: 36px;
+    max-height: 36px;
+}
+
+QPushButton[class=&quot;btn-icon-sm&quot;] {
+    padding: 6px;
+    min-width: 28px;
+    max-width: 28px;
+    min-height: 28px;
+    max-height: 28px;
+}
+
+QPushButton[class=&quot;btn-icon-lg&quot;] {
+    padding: 12px;
+    min-width: 48px;
+    max-width: 48px;
+    min-height: 48px;
+    max-height: 48px;
+}
+
+/* Tool Button */
+QToolButton {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+QToolButton:hover {
+    background-color: #475569;
+}
+
+QToolButton:pressed {
+    background-color: #334155;
+}
+
+QToolButton:checked {
+    background-color: #3b82f6;
+    color: #0f172a;
+    border-color: #3b82f6;
+}
+
+/* Radio Button */
+QRadioButton {
+    color: #f8fafc;
+    spacing: 8px;
+}
+
+QRadioButton::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    border: 2px solid #334155;
+    background-color: #0f172a;
+}
+
+QRadioButton::indicator:hover {
+    border-color: #3b82f6;
+}
+
+QRadioButton::indicator:checked {
+    border-color: #3b82f6;
+    background-color: #3b82f6;
+}
+
+QRadioButton::indicator:checked::after {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #0f172a;
+}
+
+QRadioButton:disabled {
+    color: #64748b;
+}
+
+QRadioButton::indicator:disabled {
+    border-color: #334155;
+    background-color: #1e293b;
+}
+
+/* Check Box */
+QCheckBox {
+    color: #f8fafc;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid #334155;
+    background-color: #0f172a;
+}
+
+QCheckBox::indicator:hover {
+    border-color: #3b82f6;
+}
+
+QCheckBox::indicator:checked {
+    border-color: #3b82f6;
+    background-color: #3b82f6;
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMTAgM0w0LjUgOC41TDIgNiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+);
+}
+
+QCheckBox:disabled {
+    color: #64748b;
+}
+
+QCheckBox::indicator:disabled {
+    border-color: #334155;
+    background-color: #1e293b;
+}
+
+
+/* ============================================
+   INPUTS - Text fields, combo boxes, spinners
+   ============================================ */
+
+/* Line Edit */
+QLineEdit {
+    background-color: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+QLineEdit:hover {
+    border-color: #64748b;
+}
+
+QLineEdit:focus {
+    border-color: #3b82f6;
+    border-width: 2px;
+    padding: 7px 11px;
+}
+
+QLineEdit:disabled {
+    background-color: #1e293b;
+    color: #64748b;
+    border-color: #334155;
+}
+
+QLineEdit[class=&quot;input-search&quot;] {
+    padding-left: 36px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSI3IiBjeT0iNyIgcj0iNSIgc3Ryb2tlPSIjOTRhM2I4IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxwYXRoIGQ9Ik0xMC41IDEwLjVMMTQgMTQiIHN0cm9rZT0iIzk0YTNiOCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-position: 12px center;
+}
+
+QLineEdit[class=&quot;input-error&quot;] {
+    border-color: #ef4444;
+}
+
+QLineEdit[class=&quot;input-success&quot;] {
+    border-color: #22c55e;
+}
+
+/* Text Edit */
+QTextEdit {
+    background-color: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+QTextEdit:hover {
+    border-color: #64748b;
+}
+
+QTextEdit:focus {
+    border-color: #3b82f6;
+    border-width: 2px;
+    padding: 7px 11px;
+}
+
+QTextEdit:disabled {
+    background-color: #1e293b;
+    color: #64748b;
+    border-color: #334155;
+}
+
+/* Plain Text Edit */
+QPlainTextEdit {
+    background-color: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+QPlainTextEdit:hover {
+    border-color: #64748b;
+}
+
+QPlainTextEdit:focus {
+    border-color: #3b82f6;
+    border-width: 2px;
+    padding: 7px 11px;
+}
+
+QPlainTextEdit:disabled {
+    background-color: #1e293b;
+    color: #64748b;
+    border-color: #334155;
+}
+
+/* Combo Box */
+QComboBox {
+    background-color: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px 32px 8px 12px;
+    font-size: 13px;
+    min-height: 20px;
+}
+
+QComboBox:hover {
+    border-color: #64748b;
+}
+
+QComboBox:focus {
+    border-color: #3b82f6;
+    border-width: 2px;
+    padding: 7px 31px 7px 11px;
+}
+
+QComboBox:disabled {
+    background-color: #1e293b;
+    color: #64748b;
+    border-color: #334155;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 30px;
+}
+
+QComboBox::down-arrow {
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMyA1TDYgOEw5IDUiIHN0cm9rZT0iIzY0NzQ4YiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=);
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 4px;
+    selection-background-color: #475569;
+    selection-color: #f8fafc;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item {
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: #475569;
+}
+
+/* Spin Box */
+QSpinBox, QDoubleSpinBox {
+    background-color: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+QSpinBox:hover, QDoubleSpinBox:hover {
+    border-color: #64748b;
+}
+
+QSpinBox:focus, QDoubleSpinBox:focus {
+    border-color: #3b82f6;
+    border-width: 2px;
+    padding: 7px 11px;
+}
+
+QSpinBox:disabled, QDoubleSpinBox:disabled {
+    background-color: #1e293b;
+    color: #64748b;
+    border-color: #334155;
+}
+
+QSpinBox::up-button, QDoubleSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #334155;
+    border-top-right-radius: 6px;
+    background-color: #1e293b;
+}
+
+QSpinBox::up-button:hover, QDoubleSpinBox::up-button:hover {
+    background-color: #475569;
+}
+
+QSpinBox::down-button, QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 20px;
+    border-left: 1px solid #334155;
+    border-bottom-right-radius: 6px;
+    background-color: #1e293b;
+}
+
+QSpinBox::down-button:hover, QDoubleSpinBox::down-button:hover {
+    background-color: #475569;
+}
+
+QSpinBox::up-arrow, QDoubleSpinBox::up-arrow {
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMiA3TDUgNEw4IDciIHN0cm9rZT0iIzY0NzQ4YiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=);
+    width: 10px;
+    height: 10px;
+}
+
+QSpinBox::down-arrow, QDoubleSpinBox::down-arrow {
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMiAzTDUgNkw4IDMiIHN0cm9rZT0iIzY0NzQ4YiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=);
+    width: 10px;
+    height: 10px;
+}
+
+/* Date/Time Edit */
+QDateEdit, QTimeEdit, QDateTimeEdit {
+    background-color: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+QDateEdit:hover, QTimeEdit:hover, QDateTimeEdit:hover {
+    border-color: #64748b;
+}
+
+QDateEdit:focus, QTimeEdit:focus, QDateTimeEdit:focus {
+    border-color: #3b82f6;
+    border-width: 2px;
+    padding: 7px 11px;
+}
+
+QDateEdit::drop-down, QTimeEdit::drop-down, QDateTimeEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #334155;
+}
+
+/* Calendar Widget */
+QCalendarWidget {
+    background-color: #0f172a;
+}
+
+QCalendarWidget QToolButton {
+    color: #f8fafc;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: #475569;
+}
+
+QCalendarWidget QMenu {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+}
+
+QCalendarWidget QSpinBox {
+    background-color: #1e293b;
+}
+
+QCalendarWidget QAbstractItemView {
+    background-color: #0f172a;
+    selection-background-color: #3b82f6;
+    selection-color: #0f172a;
+}
+
+/* Slider */
+QSlider::groove:horizontal {
+    border: 1px solid #334155;
+    height: 6px;
+    background-color: #334155;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background-color: #3b82f6;
+    border: 2px solid #0f172a;
+    width: 16px;
+    height: 16px;
+    margin: -6px 0;
+    border-radius: 8px;
+}
+
+QSlider::handle:horizontal:hover {
+    background-color: #06b6d4;
+}
+
+QSlider::groove:vertical {
+    border: 1px solid #334155;
+    width: 6px;
+    background-color: #334155;
+    border-radius: 3px;
+}
+
+QSlider::handle:vertical {
+    background-color: #3b82f6;
+    border: 2px solid #0f172a;
+    width: 16px;
+    height: 16px;
+    margin: 0 -6px;
+    border-radius: 8px;
+}
+
+QSlider::handle:vertical:hover {
+    background-color: #06b6d4;
+}
+
+/* Dial */
+QDial {
+    background-color: #1e293b;
+}
+
+
+/* ============================================
+   TABLES &amp; LISTS - Data display widgets
+   ============================================ */
+
+/* Table Widget */
+QTableWidget, QTableView {
+    background-color: #0f172a;
+    alternate-background-color: #1e293b;
+    color: #f8fafc;
+    gridline-color: #334155;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    selection-background-color: #3b82f6;
+    selection-color: #0f172a;
+}
+
+QTableWidget::item, QTableView::item {
+    padding: 8px;
+    border: none;
+}
+
+QTableWidget::item:hover, QTableView::item:hover {
+    background-color: #475569;
+}
+
+QTableWidget::item:selected, QTableView::item:selected {
+    background-color: #3b82f6;
+    color: #0f172a;
+}
+
+/* Table Header */
+QHeaderView::section {
+    background-color: #1e293b;
+    color: #f8fafc;
+    padding: 8px 12px;
+    border: none;
+    border-right: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+QHeaderView::section:hover {
+    background-color: #475569;
+}
+
+QHeaderView::section:first {
+    border-top-left-radius: 8px;
+}
+
+QHeaderView::section:last {
+    border-top-right-radius: 8px;
+    border-right: none;
+}
+
+/* Table Corner Button */
+QTableCornerButton::section {
+    background-color: #1e293b;
+    border: none;
+    border-right: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+    border-top-left-radius: 8px;
+}
+
+/* List Widget */
+QListWidget, QListView {
+    background-color: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 4px;
+    outline: none;
+}
+
+QListWidget::item, QListView::item {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+QListWidget::item:hover, QListView::item:hover {
+    background-color: #475569;
+}
+
+QListWidget::item:selected, QListView::item:selected {
+    background-color: #3b82f6;
+    color: #0f172a;
+}
+
+QListWidget::item:selected:!active, QListView::item:selected:!active {
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+/* Tree Widget */
+QTreeWidget, QTreeView {
+    background-color: #0f172a;
+    alternate-background-color: #1e293b;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 4px;
+    outline: none;
+}
+
+QTreeWidget::item, QTreeView::item {
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+QTreeWidget::item:hover, QTreeView::item:hover {
+    background-color: #475569;
+}
+
+QTreeWidget::item:selected, QTreeView::item:selected {
+    background-color: #3b82f6;
+    color: #0f172a;
+}
+
+QTreeWidget::item:selected:!active, QTreeView::item:selected:!active {
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+QTreeWidget::branch:has-children:!has-siblings:closed,
+QTreeWidget::branch:closed:has-children:has-siblings,
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNNCAzTDggNkw0IDkiIHN0cm9rZT0iIzY0NzQ4YiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=);
+}
+
+QTreeWidget::branch:open:has-children:!has-siblings,
+QTreeWidget::branch:open:has-children:has-siblings,
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings {
+    image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMyA0TDYgOEw5IDQiIHN0cm9rZT0iIzY0NzQ4YiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4=);
+}
+
+/* Column View */
+QColumnView {
+    background-color: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+QColumnView::item:hover {
+    background-color: #475569;
+}
+
+QColumnView::item:selected {
+    background-color: #3b82f6;
+    color: #0f172a;
+}
+
+/* Table Styling Variants */
+QTableWidget[class=&quot;table-striped&quot;] {
+    alternate-background-color: #1e293b;
+}
+
+QTableWidget[class=&quot;table-hover&quot;]::item:hover {
+    background-color: #475569;
+}
+
+QTableWidget[class=&quot;table-compact&quot;]::item {
+    padding: 4px 8px;
+}
+
+/* List Styling Variants */
+QListWidget[class=&quot;list-compact&quot;]::item {
+    padding: 6px 10px;
+}
+
+QListWidget[class=&quot;list-bordered&quot;]::item {
+    border: 1px solid #334155;
+    margin: 2px 0;
+}
+
+
+/* ============================================
+   LABELS - Text display and status indicators
+   ============================================ */
+
+/* Base Label */
+QLabel {
+    color: #f8fafc;
+    background-color: transparent;
+    font-size: 13px;
+}
+
+/* Heading Labels */
+QLabel[class=&quot;heading-1&quot;] {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f8fafc;
+}
+
+QLabel[class=&quot;heading-2&quot;] {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f8fafc;
+}
+
+QLabel[class=&quot;heading-3&quot;] {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f8fafc;
+}
+
+QLabel[class=&quot;heading-4&quot;] {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f8fafc;
+}
+
+QLabel[class=&quot;heading-5&quot;] {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f8fafc;
+}
+
+/* Text Variants */
+QLabel[class=&quot;text-primary&quot;] {
+    color: #f8fafc;
+}
+
+QLabel[class=&quot;text-secondary&quot;] {
+    color: #cbd5e1;
+}
+
+QLabel[class=&quot;text-tertiary&quot;] {
+    color: #64748b;
+}
+
+QLabel[class=&quot;text-muted&quot;] {
+    color: #64748b;
+    font-size: 12px;
+}
+
+QLabel[class=&quot;text-small&quot;] {
+    font-size: 11px;
+}
+
+QLabel[class=&quot;text-large&quot;] {
+    font-size: 15px;
+}
+
+QLabel[class=&quot;text-bold&quot;] {
+    font-weight: bold;
+}
+
+QLabel[class=&quot;text-mono&quot;] {
+    font-family: &quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace;
+}
+
+/* Accent Colors */
+QLabel[class=&quot;text-accent-primary&quot;] {
+    color: #3b82f6;
+}
+
+QLabel[class=&quot;text-accent-secondary&quot;] {
+    color: #06b6d4;
+}
+
+QLabel[class=&quot;text-success&quot;] {
+    color: #22c55e;
+}
+
+QLabel[class=&quot;text-warning&quot;] {
+    color: #f59e0b;
+}
+
+QLabel[class=&quot;text-error&quot;] {
+    color: #ef4444;
+}
+
+QLabel[class=&quot;text-info&quot;] {
+    color: #06b6d4;
+}
+
+/* Badge Labels */
+QLabel[class=&quot;badge&quot;] {
+    background-color: #334155;
+    color: #f8fafc;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel[class=&quot;badge-primary&quot;] {
+    background-color: #3b82f6;
+    color: #0f172a;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel[class=&quot;badge-secondary&quot;] {
+    background-color: #06b6d4;
+    color: #0f172a;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel[class=&quot;badge-success&quot;] {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel[class=&quot;badge-warning&quot;] {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel[class=&quot;badge-error&quot;] {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel[class=&quot;badge-info&quot;] {
+    background-color: rgba(6, 182, 212, 0.15);
+    color: #06b6d4;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Pill/Tag Labels */
+QLabel[class=&quot;pill&quot;] {
+    background-color: #334155;
+    color: #f8fafc;
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+QLabel[class=&quot;pill-outline&quot;] {
+    background-color: transparent;
+    color: #f8fafc;
+    border: 2px solid #334155;
+    border-radius: 16px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Status Indicators */
+QLabel[class=&quot;status-online&quot;] {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+QLabel[class=&quot;status-offline&quot;] {
+    color: #64748b;
+    font-weight: bold;
+}
+
+QLabel[class=&quot;status-busy&quot;] {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+QLabel[class=&quot;status-away&quot;] {
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+/* Icon Labels */
+QLabel[class=&quot;icon&quot;] {
+    font-size: 20px;
+    color: #f8fafc;
+}
+
+QLabel[class=&quot;icon-sm&quot;] {
+    font-size: 16px;
+    color: #f8fafc;
+}
+
+QLabel[class=&quot;icon-lg&quot;] {
+    font-size: 28px;
+    color: #f8fafc;
+}
+
+QLabel[class=&quot;icon-primary&quot;] {
+    color: #3b82f6;
+}
+
+QLabel[class=&quot;icon-secondary&quot;] {
+    color: #06b6d4;
+}
+
+QLabel[class=&quot;icon-success&quot;] {
+    color: #22c55e;
+}
+
+QLabel[class=&quot;icon-warning&quot;] {
+    color: #f59e0b;
+}
+
+QLabel[class=&quot;icon-error&quot;] {
+    color: #ef4444;
+}
+
+QLabel[class=&quot;icon-info&quot;] {
+    color: #06b6d4;
+}
+
+/* Code/Monospace Labels */
+QLabel[class=&quot;code&quot;] {
+    font-family: &quot;Consolas&quot;, &quot;Monaco&quot;, &quot;Courier New&quot;, monospace;
+    background-color: #334155;
+    color: #f8fafc;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Link-style Labels */
+QLabel[class=&quot;link&quot;] {
+    color: #3b82f6;
+    text-decoration: underline;
+}
+
+QLabel[class=&quot;link&quot;]:hover {
+    color: #06b6d4;
+}
+
+/* Card Title */
+QLabel[class=&quot;card-title&quot;] {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f8fafc;
+    padding-bottom: 8px;
+}
+
+QLabel[class=&quot;card-subtitle&quot;] {
+    font-size: 13px;
+    color: #cbd5e1;
+    padding-bottom: 4px;
+}
+
+/* Section Headers */
+QLabel[class=&quot;section-header&quot;] {
+    font-size: 11px;
+    font-weight: bold;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 0 4px 0;
+}
+
+/* Status Dots for Footer */
+QLabel[class=&quot;status-dot-active&quot;] {
+    background-color: #22c55e;
+    border-radius: 3px;
+    min-width: 6px;
+    max-width: 6px;
+    min-height: 6px;
+    max-height: 6px;
+}
+
+QLabel[class=&quot;status-dot-inactive&quot;] {
+    background-color: #64748b;
+    border-radius: 3px;
+    min-width: 6px;
+    max-width: 6px;
+    min-height: 6px;
+    max-height: 6px;
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="catalogTitle">
+      <property name="text">
+       <string>PyQt6 Widget Catalog</string>
+      </property>
+      <property name="class" stdset="0">
+       <string>heading-1</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="catalogSubtitle">
+      <property name="text">
+       <string>Reference for all styled widgets with their class names</string>
+      </property>
+      <property name="class" stdset="0">
+       <string>text-secondary</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="catalogTabs">
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="buttonsTab">
+       <attribute name="title">
+        <string>Buttons</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="leftMargin">
+         <number>20</number>
+        </property>
+        <property name="topMargin">
+         <number>20</number>
+        </property>
+        <property name="rightMargin">
+         <number>20</number>
+        </property>
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>QPushButton</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>class=&quot;btn-primary&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnPrimary">
+             <property name="text">
+              <string>Primary Button</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>btn-primary</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>QPushButton</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>class=&quot;btn-secondary&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnSecondary">
+             <property name="text">
+              <string>Secondary Button</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>btn-secondary</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QFrame" name="frame_3">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>QPushButton</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>class=&quot;btn-outline&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnOutline">
+             <property name="text">
+              <string>Outline Button</string>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+             <property name="class" stdset="0">
+              <string>btn-outline</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QFrame" name="frame_4">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>QPushButton</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>class=&quot;btn-ghost&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnGhost">
+             <property name="text">
+              <string>Ghost Button</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>btn-ghost</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QFrame" name="frame_5">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>QPushButton</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>class=&quot;btn-success&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnSuccess">
+             <property name="text">
+              <string>Success Button</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>btn-success</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QFrame" name="frame_6">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>QPushButton</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>class=&quot;btn-warning&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnWarning">
+             <property name="text">
+              <string>Warning Button</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>btn-warning</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QFrame" name="frame_7">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>QPushButton</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>class=&quot;btn-danger&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnDanger">
+             <property name="text">
+              <string>Danger Button</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>btn-danger</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QFrame" name="frame_8">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>QPushButton</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_16">
+             <property name="text">
+              <string>class=&quot;btn-info&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnInfo">
+             <property name="text">
+              <string>Info Button</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>btn-info</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QFrame" name="frame_9">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QLabel" name="label_17">
+             <property name="text">
+              <string>QCheckBox</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_18">
+             <property name="text">
+              <string>(no class needed)</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox">
+             <property name="text">
+              <string>CheckBox Item</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox_2">
+             <property name="text">
+              <string>Checked Item</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QFrame" name="frame_10">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item>
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string>QRadioButton</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_20">
+             <property name="text">
+              <string>(no class needed)</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton">
+             <property name="text">
+              <string>Radio Option 1</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_2">
+             <property name="text">
+              <string>Radio Option 2</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="1" colspan="2">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="inputsTab">
+       <attribute name="title">
+        <string>Inputs</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="leftMargin">
+         <number>20</number>
+        </property>
+        <property name="topMargin">
+         <number>20</number>
+        </property>
+        <property name="rightMargin">
+         <number>20</number>
+        </property>
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_11">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QLabel" name="label_21">
+             <property name="text">
+              <string>QLineEdit</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_22">
+             <property name="text">
+              <string>(no class needed)</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit">
+             <property name="placeholderText">
+              <string>Enter text...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QFrame" name="frame_12">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <item>
+            <widget class="QLabel" name="label_23">
+             <property name="text">
+              <string>QLineEdit</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_24">
+             <property name="text">
+              <string>class=&quot;input-search&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_2">
+             <property name="placeholderText">
+              <string>Search...</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>input-search</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QFrame" name="frame_13">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <widget class="QLabel" name="label_25">
+             <property name="text">
+              <string>QComboBox</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_26">
+             <property name="text">
+              <string>(no class needed)</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox">
+             <item>
+              <property name="text">
+               <string>Option 1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Option 2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Option 3</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QFrame" name="frame_14">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_15">
+           <item>
+            <widget class="QLabel" name="label_27">
+             <property name="text">
+              <string>QSpinBox</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_28">
+             <property name="text">
+              <string>(no class needed)</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>50</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QFrame" name="frame_15">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_16">
+           <item>
+            <widget class="QLabel" name="label_29">
+             <property name="text">
+              <string>QTextEdit</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_30">
+             <property name="text">
+              <string>(no class needed)</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="textEdit">
+             <property name="placeholderText">
+              <string>Enter multi-line text...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QFrame" name="frame_16">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_17">
+           <item>
+            <widget class="QLabel" name="label_31">
+             <property name="text">
+              <string>QSlider</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_32">
+             <property name="text">
+              <string>(no class needed)</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSlider" name="horizontalSlider">
+             <property name="value">
+              <number>50</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="labelsTab">
+       <attribute name="title">
+        <string>Labels</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="leftMargin">
+         <number>20</number>
+        </property>
+        <property name="topMargin">
+         <number>20</number>
+        </property>
+        <property name="rightMargin">
+         <number>20</number>
+        </property>
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <item row="3" column="0">
+         <widget class="QFrame" name="frame_19">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_20">
+           <item>
+            <widget class="QLabel" name="label_39">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_40">
+             <property name="text">
+              <string>class=&quot;badge-primary&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_41">
+             <property name="text">
+              <string>Primary Badge</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>badge-primary</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QFrame" name="frame_32">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_34">
+           <item>
+            <widget class="QLabel" name="label_70">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_71">
+             <property name="text">
+              <string>class=&quot;heading-3&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_72">
+             <property name="text">
+              <string>Heading 3</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>heading-3</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QFrame" name="frame_33">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_35">
+           <item>
+            <widget class="QLabel" name="label_73">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_74">
+             <property name="text">
+              <string>class=&quot;heading-4&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_75">
+             <property name="text">
+              <string>Heading 4</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>heading-4</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QFrame" name="frame_34">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_36">
+           <item>
+            <widget class="QLabel" name="label_76">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_77">
+             <property name="text">
+              <string>class=&quot;heading-5&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_78">
+             <property name="text">
+              <string>Heading 5</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>heading-5</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QFrame" name="frame_21">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_22">
+           <item>
+            <widget class="QLabel" name="label_45">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_46">
+             <property name="text">
+              <string>class=&quot;badge-warning&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_47">
+             <property name="text">
+              <string>Warning Badge</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>badge-warning</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QFrame" name="frame_22">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_23">
+           <item>
+            <widget class="QLabel" name="label_48">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_49">
+             <property name="text">
+              <string>class=&quot;badge-error&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_50">
+             <property name="text">
+              <string>Error Badge</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>badge-error</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_17">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_18">
+           <item>
+            <widget class="QLabel" name="label_33">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_34">
+             <property name="text">
+              <string>class=&quot;heading-1&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_35">
+             <property name="text">
+              <string>Heading 1</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>heading-1</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QFrame" name="frame_20">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_21">
+           <item>
+            <widget class="QLabel" name="label_42">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_43">
+             <property name="text">
+              <string>class=&quot;badge-success&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_44">
+             <property name="text">
+              <string>Success Badge</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>badge-success</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QFrame" name="frame_18">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_19">
+           <item>
+            <widget class="QLabel" name="label_36">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_37">
+             <property name="text">
+              <string>class=&quot;heading-2&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_38">
+             <property name="text">
+              <string>Heading 2</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>heading-2</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="textTab">
+       <attribute name="title">
+        <string>Text</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="1" column="0">
+         <widget class="QFrame" name="frame_68">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_73">
+           <item>
+            <widget class="QLabel" name="label_160">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_161">
+             <property name="text">
+              <string>class=&quot;text-tertiary&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_162">
+             <property name="text">
+              <string>tertiary text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-tertiary</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="10" column="0" colspan="2">
+         <spacer name="verticalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>478</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <widget class="QFrame" name="frame_67">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_72">
+           <item>
+            <widget class="QLabel" name="label_157">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_158">
+             <property name="text">
+              <string>class=&quot;text-muted&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_159">
+             <property name="text">
+              <string>Muted Text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-muted</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_66">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_69">
+           <item>
+            <widget class="QLabel" name="label_148">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_149">
+             <property name="text">
+              <string>class=&quot;text-primary&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_150">
+             <property name="text">
+              <string>primary text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-primary</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QFrame" name="frame_65">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_68">
+           <item>
+            <widget class="QLabel" name="label_145">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_146">
+             <property name="text">
+              <string>class=&quot;text-secondary&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_147">
+             <property name="text">
+              <string>secondary text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-secondary</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QFrame" name="frame_70">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_75">
+           <item>
+            <widget class="QLabel" name="label_166">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_167">
+             <property name="text">
+              <string>class=&quot;text-mono&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_168">
+             <property name="text">
+              <string>Mono text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-mono</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QFrame" name="frame_71">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_76">
+           <item>
+            <widget class="QLabel" name="label_169">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_170">
+             <property name="text">
+              <string>class=&quot;text-secondary&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_171">
+             <property name="text">
+              <string>Heading 2</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-secondary</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QFrame" name="frame_73">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_78">
+           <item>
+            <widget class="QLabel" name="label_175">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_176">
+             <property name="text">
+              <string>class=&quot;text-large&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_177">
+             <property name="text">
+              <string>Large text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-large</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QFrame" name="frame_69">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_74">
+           <item>
+            <widget class="QLabel" name="label_163">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_164">
+             <property name="text">
+              <string>class=&quot;text-bold&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_165">
+             <property name="text">
+              <string>Bold text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QFrame" name="frame_72">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_77">
+           <item>
+            <widget class="QLabel" name="label_172">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_173">
+             <property name="text">
+              <string>class=&quot;text-small&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_174">
+             <property name="text">
+              <string>Small text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QFrame" name="frame_80">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_85">
+           <item>
+            <widget class="QLabel" name="label_196">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_197">
+             <property name="text">
+              <string>class=&quot;text-bolded&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_198">
+             <property name="text">
+              <string>Bold text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-warning</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QFrame" name="frame_75">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_80">
+           <item>
+            <widget class="QLabel" name="label_181">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_182">
+             <property name="text">
+              <string>class=&quot;text-large&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_183">
+             <property name="text">
+              <string>Large text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-large</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QFrame" name="frame_77">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_82">
+           <item>
+            <widget class="QLabel" name="label_187">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_188">
+             <property name="text">
+              <string>class=&quot;text-bolded&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_189">
+             <property name="text">
+              <string>Bold text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-error</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QFrame" name="frame_78">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_83">
+           <item>
+            <widget class="QLabel" name="label_190">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_191">
+             <property name="text">
+              <string>class=&quot;text-mono&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_192">
+             <property name="text">
+              <string>Mono text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-info</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QFrame" name="frame_79">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_84">
+           <item>
+            <widget class="QLabel" name="label_193">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_194">
+             <property name="text">
+              <string>class=&quot;text-success&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_195">
+             <property name="text">
+              <string>Large text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-success</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QFrame" name="frame_81">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_86">
+           <item>
+            <widget class="QLabel" name="label_199">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_200">
+             <property name="text">
+              <string>class=&quot;text-accent-primary&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_201">
+             <property name="text">
+              <string>Small text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-accent-primary</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QFrame" name="frame_76">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_81">
+           <item>
+            <widget class="QLabel" name="label_184">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_185">
+             <property name="text">
+              <string>class=&quot;text-accent-secondary&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_186">
+             <property name="text">
+              <string>Small text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-accent-secondary</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QFrame" name="frame_74">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_79">
+           <item>
+            <widget class="QLabel" name="label_178">
+             <property name="text">
+              <string>QLabel</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_179">
+             <property name="text">
+              <string>class=&quot;text-mono&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_180">
+             <property name="text">
+              <string>Mono text</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>&quot;text-mono&quot;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tablesTab">
+       <attribute name="title">
+        <string>Tables &amp; Lists</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_24">
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <property name="leftMargin">
+         <number>20</number>
+        </property>
+        <property name="topMargin">
+         <number>20</number>
+        </property>
+        <property name="rightMargin">
+         <number>20</number>
+        </property>
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="frame_23">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_25">
+           <item>
+            <widget class="QLabel" name="label_51">
+             <property name="text">
+              <string>QTableWidget</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_52">
+             <property name="text">
+              <string>(no class needed)</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="tableWidget">
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <row>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>3</string>
+              </property>
+             </row>
+             <column>
+              <property name="text">
+               <string>Column 1</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Column 2</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Column 3</string>
+              </property>
+             </column>
+             <item row="0" column="0">
+              <property name="text">
+               <string>Data 1</string>
+              </property>
+             </item>
+             <item row="0" column="1">
+              <property name="text">
+               <string>Data 2</string>
+              </property>
+             </item>
+             <item row="0" column="2">
+              <property name="text">
+               <string>Data 3</string>
+              </property>
+             </item>
+             <item row="1" column="0">
+              <property name="text">
+               <string>Data 4</string>
+              </property>
+             </item>
+             <item row="1" column="1">
+              <property name="text">
+               <string>Data 5</string>
+              </property>
+             </item>
+             <item row="1" column="2">
+              <property name="text">
+               <string>Data 6</string>
+              </property>
+             </item>
+             <item row="2" column="0">
+              <property name="text">
+               <string>Data 7</string>
+              </property>
+             </item>
+             <item row="2" column="1">
+              <property name="text">
+               <string>Data 8</string>
+              </property>
+             </item>
+             <item row="2" column="2">
+              <property name="text">
+               <string>Data 9</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_24">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_26">
+           <item>
+            <widget class="QLabel" name="label_53">
+             <property name="text">
+              <string>QListWidget</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_54">
+             <property name="text">
+              <string>(no class needed)</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="listWidget">
+             <item>
+              <property name="text">
+               <string>List Item 1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>List Item 2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>List Item 3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>List Item 4</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="containersTab">
+       <attribute name="title">
+        <string>Containers</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>20</number>
+        </property>
+        <property name="topMargin">
+         <number>20</number>
+        </property>
+        <property name="rightMargin">
+         <number>20</number>
+        </property>
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_25">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_27">
+           <item>
+            <widget class="QLabel" name="label_55">
+             <property name="text">
+              <string>QFrame</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_56">
+             <property name="text">
+              <string>class=&quot;container-primary&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_27">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="class" stdset="0">
+              <string>container-primary</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_29">
+              <item>
+               <widget class="QLabel" name="label_59">
+                <property name="text">
+                 <string>Primary Container</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QFrame" name="frame_26">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_28">
+           <item>
+            <widget class="QLabel" name="label_57">
+             <property name="text">
+              <string>QFrame</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_58">
+             <property name="text">
+              <string>class=&quot;container-tertiary&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_28">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>100</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="class" stdset="0">
+              <string>container-tertiary</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_30">
+              <item>
+               <widget class="QLabel" name="label_60">
+                <property name="text">
+                 <string>Tertiary Container</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QFrame" name="frame_29">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="class" stdset="0">
+           <string>container-secondary</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_31">
+           <item>
+            <widget class="QLabel" name="label_61">
+             <property name="text">
+              <string>QProgressBar</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-bold</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_62">
+             <property name="text">
+              <string>(no class needed)</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QProgressBar" name="progressBar">
+             <property name="value">
+              <number>65</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_63">
+             <property name="text">
+              <string>class=&quot;progress-success&quot;</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>text-small code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QProgressBar" name="progressBar_2">
+             <property name="value">
+              <number>85</number>
+             </property>
+             <property name="class" stdset="0">
+              <string>progress-success</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

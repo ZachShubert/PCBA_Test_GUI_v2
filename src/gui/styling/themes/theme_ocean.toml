@@ -1,0 +1,54 @@
+# Ocean Theme - Blue/Cyan Palette
+# Professional, trustworthy, technical
+
+[light]
+# Primary accent colors
+primary = "#3b82f6"           # Bright blue
+secondary = "#06b6d4"         # Cyan
+
+# Backgrounds (lightest to darkest)
+background_primary = "#ffffff"     # Pure white
+background_secondary = "#f8fafc"   # Slate 50
+background_tertiary = "#f1f5f9"    # Slate 100
+background_hover = "#e2e8f0"       # Slate 200
+
+# Text colors (darkest to lightest)
+text_primary = "#0f172a"      # Slate 900
+text_secondary = "#475569"    # Slate 600
+text_tertiary = "#94a3b8"     # Slate 400
+
+# Borders and dividers
+border = "#e2e8f0"            # Slate 200
+border_focus = "#3b82f6"      # Primary
+
+# Status colors
+success = "#22c55e"           # Green 500
+warning = "#f59e0b"           # Amber 500
+error = "#ef4444"             # Red 500
+info = "#06b6d4"              # Cyan 500
+
+[dark]
+# Primary accent colors (same as light)
+primary = "#3b82f6"
+secondary = "#06b6d4"
+
+# Backgrounds (darkest to lighter)
+background_primary = "#0f172a"     # Slate 900
+background_secondary = "#1e293b"   # Slate 800
+background_tertiary = "#334155"    # Slate 700
+background_hover = "#475569"       # Slate 600
+
+# Text colors (lightest to darker)
+text_primary = "#f8fafc"      # Slate 50
+text_secondary = "#cbd5e1"    # Slate 300
+text_tertiary = "#64748b"     # Slate 500
+
+# Borders and dividers
+border = "#334155"            # Slate 700
+border_focus = "#3b82f6"      # Primary
+
+# Status colors (same as light)
+success = "#22c55e"
+warning = "#f59e0b"
+error = "#ef4444"
+info = "#06b6d4"

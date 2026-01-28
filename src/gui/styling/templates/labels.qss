@@ -1,0 +1,308 @@
+/* ============================================
+   LABELS - Text display and status indicators
+   ============================================ */
+
+/* Base Label */
+QLabel {
+    color: {text_primary};
+    background-color: transparent;
+    font-size: 16px;
+}
+
+/* Heading Labels */
+QLabel[class="heading-1"] {
+    font-size: 28px;
+    font-weight: bold;
+    color: {text_primary};
+}
+
+QLabel[class="heading-2"] {
+    font-size: 24px;
+    font-weight: bold;
+    color: {text_primary};
+}
+
+QLabel[class="heading-3"] {
+    font-size: 20px;
+    font-weight: bold;
+    color: {text_primary};
+}
+
+QLabel[class="heading-4"] {
+    font-size: 16px;
+    font-weight: bold;
+    color: {text_primary};
+}
+
+QLabel[class="heading-5"] {
+    font-size: 14px;
+    font-weight: bold;
+    color: {text_primary};
+}
+
+/* Text Variants */
+QLabel[class="text-primary"] {
+    color: {text_primary};
+}
+
+QLabel[class="text-secondary"] {
+    color: {text_secondary};
+}
+
+QLabel[class="text-tertiary"] {
+    color: {text_tertiary};
+}
+
+QLabel[class="text-muted"] {
+    color: {text_tertiary};
+    font-size: 12px;
+}
+
+QLabel[class="text-small"] {
+    font-size: 11px;
+}
+
+QLabel[class="text-large"] {
+    font-size: 15px;
+}
+
+QLabel[class="text-bold"] {
+    font-weight: bold;
+}
+
+QLabel[class="text-mono"] {
+    font-family: "Consolas", "Monaco", "Courier New", monospace;
+}
+
+/* Accent Colors */
+QLabel[class="text-accent-primary"] {
+    color: {primary};
+}
+
+QLabel[class="text-accent-secondary"] {
+    color: {secondary};
+}
+
+QLabel[class="text-success"] {
+    color: {success};
+}
+
+QLabel[class="text-warning"] {
+    color: {warning};
+}
+
+QLabel[class="text-error"] {
+    color: {error};
+}
+
+QLabel[class="text-info"] {
+    color: {info};
+}
+
+/* Badge Labels */
+QLabel[class="badge"] {
+    background-color: {background_tertiary};
+    color: {text_primary};
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel[class="badge-primary"] {
+    background-color: {primary};
+    color: {background_primary};
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel[class="badge-secondary"] {
+    background-color: {secondary};
+    color: {background_primary};
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel[class="badge-success"] {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: {success};
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel[class="badge-warning"] {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: {warning};
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel[class="badge-error"] {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: {error};
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel[class="badge-info"] {
+    background-color: rgba(6, 182, 212, 0.15);
+    color: {info};
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Pill/Tag Labels */
+QLabel[class="pill"] {
+    background-color: {background_tertiary};
+    color: {text_primary};
+    border-radius: 16px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+QLabel[class="pill-outline"] {
+    background-color: transparent;
+    color: {text_primary};
+    border: 2px solid {border};
+    border-radius: 16px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Status Indicators */
+QLabel[class="status-online"] {
+    color: {success};
+    font-weight: bold;
+}
+
+QLabel[class="status-offline"] {
+    color: {text_tertiary};
+    font-weight: bold;
+}
+
+QLabel[class="status-busy"] {
+    color: {error};
+    font-weight: bold;
+}
+
+QLabel[class="status-away"] {
+    color: {warning};
+    font-weight: bold;
+}
+
+/* Icon Labels */
+QLabel[class="icon"] {
+    font-size: 20px;
+    color: {text_primary};
+}
+
+QLabel[class="icon-sm"] {
+    font-size: 16px;
+    color: {text_primary};
+}
+
+QLabel[class="icon-lg"] {
+    font-size: 28px;
+    color: {text_primary};
+}
+
+QLabel[class="icon-primary"] {
+    color: {primary};
+}
+
+QLabel[class="icon-secondary"] {
+    color: {secondary};
+}
+
+QLabel[class="icon-success"] {
+    color: {success};
+}
+
+QLabel[class="icon-warning"] {
+    color: {warning};
+}
+
+QLabel[class="icon-error"] {
+    color: {error};
+}
+
+QLabel[class="icon-info"] {
+    color: {info};
+}
+
+/* Code/Monospace Labels */
+QLabel[class="code"] {
+    font-family: "Consolas", "Monaco", "Courier New", monospace;
+    background-color: {background_tertiary};
+    color: {text_primary};
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Link-style Labels */
+QLabel[class="link"] {
+    color: {primary};
+    text-decoration: underline;
+}
+
+QLabel[class="link"]:hover {
+    color: {secondary};
+}
+
+/* Card Title */
+QLabel[class="card-title"] {
+    font-size: 16px;
+    font-weight: bold;
+    color: {text_primary};
+    padding-bottom: 8px;
+}
+
+QLabel[class="card-subtitle"] {
+    font-size: 13px;
+    color: {text_secondary};
+    padding-bottom: 4px;
+}
+
+/* Section Headers */
+QLabel[class="section-header"] {
+    font-size: 11px;
+    font-weight: bold;
+    color: {text_tertiary};
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 0 4px 0;
+}
+
+/* Status Dots for Footer */
+QLabel[class="status-dot-active"] {
+    background-color: {success};
+    border-radius: 3px;
+    min-width: 6px;
+    max-width: 6px;
+    min-height: 6px;
+    max-height: 6px;
+}
+
+QLabel[class="status-dot-inactive"] {
+    background-color: {text_tertiary};
+    border-radius: 3px;
+    min-width: 6px;
+    max-width: 6px;
+    min-height: 6px;
+    max-height: 6px;
+}

@@ -1,0 +1,54 @@
+# Sunset Theme - Orange/Amber Palette
+# Warm, energetic, creative
+
+[light]
+# Primary accent colors
+primary = "#f97316"           # Orange 500
+secondary = "#f59e0b"         # Amber 500
+
+# Backgrounds (lightest to darkest)
+background_primary = "#ffffff"     # Pure white
+background_secondary = "#fffbeb"   # Amber 50
+background_tertiary = "#fef3c7"    # Amber 100
+background_hover = "#fde68a"       # Amber 200
+
+# Text colors (darkest to lightest)
+text_primary = "#1c1917"      # Stone 900
+text_secondary = "#57534e"    # Stone 600
+text_tertiary = "#a8a29e"     # Stone 400
+
+# Borders and dividers
+border = "#e7e5e4"            # Stone 200
+border_focus = "#f97316"      # Primary
+
+# Status colors
+success = "#22c55e"           # Green 500
+warning = "#f59e0b"           # Amber 500
+error = "#dc2626"             # Red 600
+info = "#0ea5e9"              # Sky 500
+
+[dark]
+# Primary accent colors (same as light)
+primary = "#f97316"
+secondary = "#f59e0b"
+
+# Backgrounds (darkest to lighter)
+background_primary = "#1c1917"     # Stone 900
+background_secondary = "#292524"   # Stone 800
+background_tertiary = "#44403c"    # Stone 700
+background_hover = "#57534e"       # Stone 600
+
+# Text colors (lightest to darker)
+text_primary = "#fafaf9"      # Stone 50
+text_secondary = "#d6d3d1"    # Stone 300
+text_tertiary = "#78716c"     # Stone 500
+
+# Borders and dividers
+border = "#44403c"            # Stone 700
+border_focus = "#f97316"      # Primary
+
+# Status colors (same as light)
+success = "#22c55e"
+warning = "#f59e0b"
+error = "#dc2626"
+info = "#0ea5e9"

@@ -1,0 +1,54 @@
+# Forest Theme - Green/Emerald Palette
+# Natural, growth, balanced
+
+[light]
+# Primary accent colors
+primary = "#10b981"           # Emerald 500
+secondary = "#059669"         # Emerald 600
+
+# Backgrounds (lightest to darkest)
+background_primary = "#ffffff"     # Pure white
+background_secondary = "#f0fdf4"   # Green 50
+background_tertiary = "#dcfce7"    # Green 100
+background_hover = "#bbf7d0"       # Green 200
+
+# Text colors (darkest to lightest)
+text_primary = "#14532d"      # Green 900
+text_secondary = "#166534"    # Green 800
+text_tertiary = "#86efac"     # Green 300
+
+# Borders and dividers
+border = "#d1fae5"            # Green 200
+border_focus = "#10b981"      # Primary
+
+# Status colors
+success = "#10b981"           # Emerald 500
+warning = "#f59e0b"           # Amber 500
+error = "#ef4444"             # Red 500
+info = "#06b6d4"              # Cyan 500
+
+[dark]
+# Primary accent colors (same as light)
+primary = "#10b981"
+secondary = "#059669"
+
+# Backgrounds (darkest to lighter)
+background_primary = "#14532d"     # Green 900
+background_secondary = "#166534"   # Green 800
+background_tertiary = "#15803d"    # Green 700
+background_hover = "#16a34a"       # Green 600
+
+# Text colors (lightest to darker)
+text_primary = "#f0fdf4"      # Green 50
+text_secondary = "#bbf7d0"    # Green 200
+text_tertiary = "#4ade80"     # Green 400
+
+# Borders and dividers
+border = "#15803d"            # Green 700
+border_focus = "#10b981"      # Primary
+
+# Status colors (same as light)
+success = "#10b981"
+warning = "#f59e0b"
+error = "#ef4444"
+info = "#06b6d4"

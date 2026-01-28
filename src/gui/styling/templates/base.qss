@@ -1,0 +1,297 @@
+/* ============================================
+   BASE STYLES - Global application styling
+   ============================================ */
+
+/* Main Window */
+QMainWindow {
+    background-color: {background_primary};
+}
+
+/* Central Widget */
+QWidget {
+    background-color: {background_primary};
+    color: {text_primary};
+    font-family: Inter,  "sans-serif", "JetBrains Mono", monospace, "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Scroll Areas */
+QScrollArea {
+    border: none;
+    background-color: {background_primary};
+}
+
+/* Scroll Bars */
+QScrollBar:vertical {
+    border: none;
+    background-color: {background_secondary};
+    width: 10px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: {border};
+    min-height: 30px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: {primary};
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    background: transparent;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background-color: {background_secondary};
+    height: 10px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: {border};
+    min-width: 30px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: {primary};
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+    background: transparent;
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: transparent;
+}
+
+/* Frames and Containers */
+QFrame {
+    border: none;
+    background-color: transparent;
+}
+
+QFrame[class="container-primary"] {
+    background-color: {background_primary};
+    border: 1px solid {border};
+    border-radius: 8px;
+}
+
+QFrame[class="container-secondary"] {
+    background-color: {background_secondary};
+    border: 1px solid {border};
+    border-radius: 8px;
+}
+
+QFrame[class="container-tertiary"] {
+    background-color: {background_tertiary};
+    border: 1px solid {border};
+    border-radius: 8px;
+}
+QFrame[class="header-frame"] {
+    background-color: {background_primary};
+    border-bottom: 1px solid {border};
+    border-radius: 0px;
+}
+
+QFrame[class="footer-frame"] {
+    background-color: {background_primary};
+    border-top: 1px solid {border};
+    border-radius: 0px;
+}
+
+QFrame[class="side-bar-frame"] {
+    background-color: {background_primary};
+    border-right: 1px solid {border};
+    border-radius: 0px;
+}
+
+
+QFrame[class="divider-vertical"] {
+    background-color: {border};
+    max-width: 1px;
+    min-width: 1px;
+}
+
+QFrame[class="divider-horizontal"] {
+    background-color: {border};
+    max-height: 1px;
+    min-height: 1px;
+}
+
+/* Group Box */
+QGroupBox {
+    border: 1px solid {border};
+    border-radius: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    background-color: {background_secondary};
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0px 8px;
+    color: {text_primary};
+    font-weight: bold;
+}
+
+/* Splitter */
+QSplitter::handle {
+    background-color: {border};
+}
+
+QSplitter::handle:horizontal {
+    width: 2px;
+}
+
+QSplitter::handle:vertical {
+    height: 2px;
+}
+
+QSplitter::handle:hover {
+    background-color: {primary};
+}
+
+/* Tool Tip */
+QToolTip {
+    background-color: {background_tertiary};
+    color: {text_primary};
+    border: 1px solid {border};
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+/* Menu Bar */
+QMenuBar {
+    background-color: {background_primary};
+    border-bottom: 1px solid {border};
+    padding: 4px;
+}
+
+QMenuBar::item {
+    padding: 6px 12px;
+    background-color: transparent;
+    color: {text_primary};
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected {
+    background-color: {background_hover};
+}
+
+QMenuBar::item:pressed {
+    background-color: {primary};
+    color: {background_primary};
+}
+
+/* Menu */
+QMenu {
+    background-color: {background_primary};
+    border: 1px solid {border};
+    border-radius: 8px;
+    padding: 8px;
+}
+
+QMenu::item {
+    padding: 8px 24px 8px 12px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: {background_hover};
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: {border};
+    margin: 6px 0px;
+}
+
+/* Status Bar */
+QStatusBar {
+    background-color: {background_primary};
+    border-top: 1px solid {border};
+    color: {text_secondary};
+}
+
+QStatusBar::item {
+    border: none;
+}
+
+/* Tab Widget */
+QTabWidget::pane {
+    border: 1px solid {border};
+    border-radius: 8px;
+    background-color: {background_primary};
+    top: -1px;
+}
+
+QTabBar::tab {
+    background-color: {background_secondary};
+    color: {text_secondary};
+    padding: 10px 20px;
+    border: 1px solid {border};
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background-color: {background_primary};
+    color: {text_primary};
+    font-weight: bold;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: {background_hover};
+}
+
+/* Progress Bar */
+QProgressBar {
+    border: 1px solid {border};
+    border-radius: 4px;
+    background-color: {background_tertiary};
+    text-align: center;
+    color: {text_primary};
+    height: 20px;
+}
+
+QProgressBar::chunk {
+    background-color: {primary};
+    border-radius: 3px;
+}
+
+QProgressBar[class="progress-success"]::chunk {
+    background-color: {success};
+}
+
+QProgressBar[class="progress-warning"]::chunk {
+    background-color: {warning};
+}
+
+QProgressBar[class="progress-error"]::chunk {
+    background-color: {error};
+}
+
+/* Vertical and Horizontal line breaks */
+Line{
+    background-color: {border};
+}

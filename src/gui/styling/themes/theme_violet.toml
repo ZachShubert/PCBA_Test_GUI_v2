@@ -1,0 +1,54 @@
+# Violet Theme - Purple/Fuchsia Palette
+# Creative, premium, distinctive
+
+[light]
+# Primary accent colors
+primary = "#a855f7"           # Purple 500
+secondary = "#d946ef"         # Fuchsia 500
+
+# Backgrounds (lightest to darkest)
+background_primary = "#ffffff"     # Pure white
+background_secondary = "#faf5ff"   # Purple 50
+background_tertiary = "#f3e8ff"    # Purple 100
+background_hover = "#e9d5ff"       # Purple 200
+
+# Text colors (darkest to lightest)
+text_primary = "#3b0764"      # Purple 950
+text_secondary = "#581c87"    # Purple 900
+text_tertiary = "#a78bfa"     # Purple 400
+
+# Borders and dividers
+border = "#e9d5ff"            # Purple 200
+border_focus = "#a855f7"      # Primary
+
+# Status colors
+success = "#22c55e"           # Green 500
+warning = "#f59e0b"           # Amber 500
+error = "#ef4444"             # Red 500
+info = "#06b6d4"              # Cyan 500
+
+[dark]
+# Primary accent colors (same as light)
+primary = "#a855f7"
+secondary = "#d946ef"
+
+# Backgrounds (darkest to lighter)
+background_primary = "#3b0764"     # Purple 950
+background_secondary = "#581c87"   # Purple 900
+background_tertiary = "#6b21a8"    # Purple 800
+background_hover = "#7e22ce"       # Purple 700
+
+# Text colors (lightest to darker)
+text_primary = "#faf5ff"      # Purple 50
+text_secondary = "#e9d5ff"    # Purple 200
+text_tertiary = "#c084fc"     # Purple 400
+
+# Borders and dividers
+border = "#6b21a8"            # Purple 800
+border_focus = "#a855f7"      # Primary
+
+# Status colors (same as light)
+success = "#22c55e"
+warning = "#f59e0b"
+error = "#ef4444"
+info = "#06b6d4"
